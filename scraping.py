@@ -3,6 +3,9 @@ from splinter import Browser
 from bs4 import BeautifulSoup
 import pandas as pd
 
+def scrape_all():
+    # Initiate headless driver for deployment
+    browser = Browser("chrome", executable_path="chromedriver", headless= True)
 
 # Set the executable path and initialize the chrome browser in splinter
 executable_path = {'executable_path': 'chromedriver'}
